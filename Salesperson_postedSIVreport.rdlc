@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="Inv_Posting_Date">
+          <DataField>Inv_Posting_Date</DataField>
+        </Field>
+        <Field Name="Inv_DocNo_">
+          <DataField>Inv_DocNo_</DataField>
+        </Field>
+        <Field Name="Inv_Order_No_">
+          <DataField>Inv_Order_No_</DataField>
+        </Field>
+        <Field Name="Inv_Sell_to_Customer_No_">
+          <DataField>Inv_Sell_to_Customer_No_</DataField>
+        </Field>
+        <Field Name="Inv_Customer_Name">
+          <DataField>Inv_Customer_Name</DataField>
+        </Field>
+        <Field Name="Inv_ItemNo">
+          <DataField>Inv_ItemNo</DataField>
+        </Field>
+        <Field Name="Inv_Quantity">
+          <DataField>Inv_Quantity</DataField>
+        </Field>
+        <Field Name="Inv_QuantityFormat">
+          <DataField>Inv_QuantityFormat</DataField>
+        </Field>
+        <Field Name="Inv_Unit_Price">
+          <DataField>Inv_Unit_Price</DataField>
+        </Field>
+        <Field Name="Inv_Unit_PriceFormat">
+          <DataField>Inv_Unit_PriceFormat</DataField>
+        </Field>
+        <Field Name="Inv_Amount">
+          <DataField>Inv_Amount</DataField>
+        </Field>
+        <Field Name="Inv_AmountFormat">
+          <DataField>Inv_AmountFormat</DataField>
+        </Field>
+        <Field Name="Cre_Posting_Date">
+          <DataField>Cre_Posting_Date</DataField>
+        </Field>
+        <Field Name="Cre_DocNo_">
+          <DataField>Cre_DocNo_</DataField>
+        </Field>
+        <Field Name="Cre_Return_Order_No_">
+          <DataField>Cre_Return_Order_No_</DataField>
+        </Field>
+        <Field Name="Cre_Customer_Name">
+          <DataField>Cre_Customer_Name</DataField>
+        </Field>
+        <Field Name="Cre_Customer_No_">
+          <DataField>Cre_Customer_No_</DataField>
+        </Field>
+        <Field Name="Cre_ItemNo_">
+          <DataField>Cre_ItemNo_</DataField>
+        </Field>
+        <Field Name="Cre_Quantity">
+          <DataField>Cre_Quantity</DataField>
+        </Field>
+        <Field Name="Cre_QuantityFormat">
+          <DataField>Cre_QuantityFormat</DataField>
+        </Field>
+        <Field Name="Cre_Unit_Price">
+          <DataField>Cre_Unit_Price</DataField>
+        </Field>
+        <Field Name="Cre_Unit_PriceFormat">
+          <DataField>Cre_Unit_PriceFormat</DataField>
+        </Field>
+        <Field Name="Cre_Amount">
+          <DataField>Cre_Amount</DataField>
+        </Field>
+        <Field Name="Cre_AmountFormat">
+          <DataField>Cre_AmountFormat</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

@@ -7,99 +7,115 @@ report 50140 Salesperson_postedSIVreport
 
     dataset
     {
-        dataitem("Sales Invoice Header"; "Sales Invoice Header")
+        dataitem("Cust. Ledger Entry"; "Cust. Ledger Entry")
         {
-            RequestFilterFields = "Salesperson Code", "Posting Date";
+            RequestFilterFields = "Salesperson Code", "Posting Date", "Document Type";
             PrintOnlyIfDetail = true;
-            column(Inv_Posting_Date; "Posting Date")
+            column(Posting_Date; "Posting Date")
             {
 
             }
-            column(Inv_DocNo_; "No.")
+            column(Document_Type; "Document Type")
             {
 
             }
-            column(Inv_Order_No_; "Order No.")
+            column(Document_No_; "Document No.")
             {
 
             }
-            column(Inv_Sell_to_Customer_No_; "Sell-to Customer No.")
+            column(Customer_No_; "Customer No.")
             {
 
             }
-            column(Inv_Customer_Name; "Bill-to Name")
-            {
+            // column(Inv_Posting_Date; "Posting Date")
+            // {
 
-            }
-            dataitem("Sales Invoice Line"; "Sales Invoice Line")
-            {
-                DataItemLink = "Document No." = field("No.");
+            // }
+            // column(Inv_DocNo_; "No.")
+            // {
 
-                column(Inv_ItemNo; "No.")
-                {
+            // }
+            // column(Inv_Order_No_; "Order No.")
+            // {
 
-                }
-                column(Inv_Quantity; Quantity)
-                {
+            // }
+            // column(Inv_Sell_to_Customer_No_; "Sell-to Customer No.")
+            // {
 
-                }
-                column(Inv_Unit_Price; "Unit Price")
-                {
+            // }
+            // column(Inv_Customer_Name; "Bill-to Name")
+            // {
 
-                }
-                column(Inv_Amount; Amount)
-                {
+            // }
+            // dataitem("Sales Invoice Line"; "Sales Invoice Line")
+            // {
+            //     DataItemLink = "Document No." = field("No.");
 
-                }
-            }
+            //     column(Inv_ItemNo; "No.")
+            //     {
+
+            //     }
+            //     column(Inv_Quantity; Quantity)
+            //     {
+
+            //     }
+            //     column(Inv_Unit_Price; "Unit Price")
+            //     {
+
+            //     }
+            //     column(Inv_Amount; Amount)
+            //     {
+
+            //     }
+            // }
 
         }
-        dataitem("Sales Cr.Memo Header"; "Sales Cr.Memo Header")
-        {
-            RequestFilterFields = "Salesperson Code", "Posting Date";
+        // dataitem("Sales Cr.Memo Header"; "Sales Cr.Memo Header")
+        // {
+        //     RequestFilterFields = "Salesperson Code", "Posting Date";
 
-            column(Cre_Posting_Date; "Posting Date")
-            {
+        //     column(Cre_Posting_Date; "Posting Date")
+        //     {
 
-            }
-            column(Cre_DocNo_; "No.")
-            {
+        //     }
+        //     column(Cre_DocNo_; "No.")
+        //     {
 
-            }
-            column(Cre_Return_Order_No_; "Return Order No.")
-            {
+        //     }
+        //     column(Cre_Return_Order_No_; "Return Order No.")
+        //     {
 
-            }
-            column(Cre_Customer_Name; "Bill-to Name")
-            {
+        //     }
+        //     column(Cre_Customer_Name; "Bill-to Name")
+        //     {
 
-            }
-            column(Cre_Customer_No_; "Bill-to Customer No.")
-            {
+        //     }
+        //     column(Cre_Customer_No_; "Bill-to Customer No.")
+        //     {
 
-            }
-            dataitem("Sales Cr.Memo Line"; "Sales Cr.Memo Line")
-            {
-                DataItemLink = "Document No." = field("No.");
-                column(Cre_ItemNo_; "No.")
-                {
+        //     }
+        //     dataitem("Sales Cr.Memo Line"; "Sales Cr.Memo Line")
+        //     {
+        //         DataItemLink = "Document No." = field("No.");
+        //         column(Cre_ItemNo_; "No.")
+        //         {
 
-                }
-                column(Cre_Quantity; Quantity)
-                {
+        //         }
+        //         column(Cre_Quantity; Quantity)
+        //         {
 
-                }
-                column(Cre_Unit_Price; "Unit Price")
-                {
+        //         }
+        //         column(Cre_Unit_Price; "Unit Price")
+        //         {
 
-                }
-                column(Cre_Amount; Amount)
-                {
+        //         }
+        //         column(Cre_Amount; Amount)
+        //         {
 
-                }
-            }
+        //         }
+        //     }
 
-        }
+        // }
     }
 
     requestpage

@@ -22,6 +22,170 @@
       </Page>
     </ReportSection>
   </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="Posting_DateCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Posting_DateCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Posting_DateCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Document_TypeCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Document_TypeCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Document_TypeCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Document_No_Caption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Document_No_Caption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Document_No_Caption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Customer_No_Caption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Customer_No_Caption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Customer_No_Caption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Salesperson_CodeCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Salesperson_CodeCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Salesperson_CodeCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="External_Document_No_Caption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>External_Document_No_Caption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>External_Document_No_Caption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="User_IDCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>User_IDCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>User_IDCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Inv_Customer_NameCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Inv_Customer_NameCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Inv_Customer_NameCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Inv_Payment_Terms_CodeCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Inv_Payment_Terms_CodeCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Inv_Payment_Terms_CodeCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Inv_Bill_to_CityCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Inv_Bill_to_CityCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Inv_Bill_to_CityCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Inv_Bill_to_CountyCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Inv_Bill_to_CountyCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Inv_Bill_to_CountyCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Inv_No_Caption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Inv_No_Caption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Inv_No_Caption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Inv_QuantityCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Inv_QuantityCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Inv_QuantityCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Inv_Unit_PriceCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Inv_Unit_PriceCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Inv_Unit_PriceCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Inv_Order_No_Caption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Inv_Order_No_Caption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Inv_Order_No_Caption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Inv_AmountCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Inv_AmountCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Inv_AmountCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Unit_PriceCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Unit_PriceCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Unit_PriceCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Cr_Actual_Unit_PriceCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Cr_Actual_Unit_PriceCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Cr_Actual_Unit_PriceCaption</Prompt>
+    </ReportParameter>
+  </ReportParameters>
   <Code>Public Function BlankZero(ByVal Value As Decimal)
     if Value = 0 then
         Return ""
@@ -82,6 +246,9 @@ End Function
         <Field Name="External_Document_No_">
           <DataField>External_Document_No_</DataField>
         </Field>
+        <Field Name="User_ID">
+          <DataField>User_ID</DataField>
+        </Field>
         <Field Name="Inv_Customer_Name">
           <DataField>Inv_Customer_Name</DataField>
         </Field>
@@ -118,6 +285,12 @@ End Function
         <Field Name="Inv_AmountFormat">
           <DataField>Inv_AmountFormat</DataField>
         </Field>
+        <Field Name="Unit_Price">
+          <DataField>Unit_Price</DataField>
+        </Field>
+        <Field Name="Unit_PriceFormat">
+          <DataField>Unit_PriceFormat</DataField>
+        </Field>
         <Field Name="Cr_Posting_Date">
           <DataField>Cr_Posting_Date</DataField>
         </Field>
@@ -135,6 +308,9 @@ End Function
         </Field>
         <Field Name="Cr_External_Document_No_">
           <DataField>Cr_External_Document_No_</DataField>
+        </Field>
+        <Field Name="Cr_User_ID">
+          <DataField>Cr_User_ID</DataField>
         </Field>
         <Field Name="Cr_Customer_Name">
           <DataField>Cr_Customer_Name</DataField>
@@ -171,6 +347,12 @@ End Function
         </Field>
         <Field Name="Cr_AmountFormat">
           <DataField>Cr_AmountFormat</DataField>
+        </Field>
+        <Field Name="Cr_Actual_Unit_Price">
+          <DataField>Cr_Actual_Unit_Price</DataField>
+        </Field>
+        <Field Name="Cr_Actual_Unit_PriceFormat">
+          <DataField>Cr_Actual_Unit_PriceFormat</DataField>
         </Field>
       </Fields>
       <Query>

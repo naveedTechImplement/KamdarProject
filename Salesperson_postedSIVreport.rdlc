@@ -64,23 +64,38 @@ End Function
   <DataSets>
     <DataSet Name="DataSet_Result">
       <Fields>
-        <Field Name="Inv_Posting_Date">
-          <DataField>Inv_Posting_Date</DataField>
+        <Field Name="Posting_Date">
+          <DataField>Posting_Date</DataField>
         </Field>
-        <Field Name="Inv_DocNo_">
-          <DataField>Inv_DocNo_</DataField>
+        <Field Name="Document_Type">
+          <DataField>Document_Type</DataField>
         </Field>
-        <Field Name="Inv_Order_No_">
-          <DataField>Inv_Order_No_</DataField>
+        <Field Name="Document_No_">
+          <DataField>Document_No_</DataField>
         </Field>
-        <Field Name="Inv_Sell_to_Customer_No_">
-          <DataField>Inv_Sell_to_Customer_No_</DataField>
+        <Field Name="Customer_No_">
+          <DataField>Customer_No_</DataField>
+        </Field>
+        <Field Name="Salesperson_Code">
+          <DataField>Salesperson_Code</DataField>
+        </Field>
+        <Field Name="External_Document_No_">
+          <DataField>External_Document_No_</DataField>
         </Field>
         <Field Name="Inv_Customer_Name">
           <DataField>Inv_Customer_Name</DataField>
         </Field>
-        <Field Name="Inv_ItemNo">
-          <DataField>Inv_ItemNo</DataField>
+        <Field Name="Inv_Payment_Terms_Code">
+          <DataField>Inv_Payment_Terms_Code</DataField>
+        </Field>
+        <Field Name="Inv_Bill_to_City">
+          <DataField>Inv_Bill_to_City</DataField>
+        </Field>
+        <Field Name="Inv_Bill_to_County">
+          <DataField>Inv_Bill_to_County</DataField>
+        </Field>
+        <Field Name="Inv_No_">
+          <DataField>Inv_No_</DataField>
         </Field>
         <Field Name="Inv_Quantity">
           <DataField>Inv_Quantity</DataField>
@@ -94,47 +109,68 @@ End Function
         <Field Name="Inv_Unit_PriceFormat">
           <DataField>Inv_Unit_PriceFormat</DataField>
         </Field>
+        <Field Name="Inv_Order_No_">
+          <DataField>Inv_Order_No_</DataField>
+        </Field>
         <Field Name="Inv_Amount">
           <DataField>Inv_Amount</DataField>
         </Field>
         <Field Name="Inv_AmountFormat">
           <DataField>Inv_AmountFormat</DataField>
         </Field>
-        <Field Name="Cre_Posting_Date">
-          <DataField>Cre_Posting_Date</DataField>
+        <Field Name="Cr_Posting_Date">
+          <DataField>Cr_Posting_Date</DataField>
         </Field>
-        <Field Name="Cre_DocNo_">
-          <DataField>Cre_DocNo_</DataField>
+        <Field Name="Cr_Document_Type">
+          <DataField>Cr_Document_Type</DataField>
         </Field>
-        <Field Name="Cre_Return_Order_No_">
-          <DataField>Cre_Return_Order_No_</DataField>
+        <Field Name="Cr_Document_No_">
+          <DataField>Cr_Document_No_</DataField>
         </Field>
-        <Field Name="Cre_Customer_Name">
-          <DataField>Cre_Customer_Name</DataField>
+        <Field Name="Cr_Customer_No_">
+          <DataField>Cr_Customer_No_</DataField>
         </Field>
-        <Field Name="Cre_Customer_No_">
-          <DataField>Cre_Customer_No_</DataField>
+        <Field Name="Cr_Salesperson_Code">
+          <DataField>Cr_Salesperson_Code</DataField>
         </Field>
-        <Field Name="Cre_ItemNo_">
-          <DataField>Cre_ItemNo_</DataField>
+        <Field Name="Cr_External_Document_No_">
+          <DataField>Cr_External_Document_No_</DataField>
         </Field>
-        <Field Name="Cre_Quantity">
-          <DataField>Cre_Quantity</DataField>
+        <Field Name="Cr_Customer_Name">
+          <DataField>Cr_Customer_Name</DataField>
         </Field>
-        <Field Name="Cre_QuantityFormat">
-          <DataField>Cre_QuantityFormat</DataField>
+        <Field Name="Cr_Payment_Terms_Code">
+          <DataField>Cr_Payment_Terms_Code</DataField>
         </Field>
-        <Field Name="Cre_Unit_Price">
-          <DataField>Cre_Unit_Price</DataField>
+        <Field Name="Cr_Bill_to_City">
+          <DataField>Cr_Bill_to_City</DataField>
         </Field>
-        <Field Name="Cre_Unit_PriceFormat">
-          <DataField>Cre_Unit_PriceFormat</DataField>
+        <Field Name="Cr_Bill_to_County">
+          <DataField>Cr_Bill_to_County</DataField>
         </Field>
-        <Field Name="Cre_Amount">
-          <DataField>Cre_Amount</DataField>
+        <Field Name="Cr_No_">
+          <DataField>Cr_No_</DataField>
         </Field>
-        <Field Name="Cre_AmountFormat">
-          <DataField>Cre_AmountFormat</DataField>
+        <Field Name="Cr_Quantity">
+          <DataField>Cr_Quantity</DataField>
+        </Field>
+        <Field Name="Cr_QuantityFormat">
+          <DataField>Cr_QuantityFormat</DataField>
+        </Field>
+        <Field Name="Cr_Unit_Price">
+          <DataField>Cr_Unit_Price</DataField>
+        </Field>
+        <Field Name="Cr_Unit_PriceFormat">
+          <DataField>Cr_Unit_PriceFormat</DataField>
+        </Field>
+        <Field Name="Cr_Order_No_">
+          <DataField>Cr_Order_No_</DataField>
+        </Field>
+        <Field Name="Cr_Amount">
+          <DataField>Cr_Amount</DataField>
+        </Field>
+        <Field Name="Cr_AmountFormat">
+          <DataField>Cr_AmountFormat</DataField>
         </Field>
       </Fields>
       <Query>
